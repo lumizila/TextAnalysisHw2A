@@ -8,6 +8,7 @@ import json
 import string
 import re
 import sys
+import operator
 from nltk.corpus import twitter_samples as tw
 from nltk import cluster
 from nltk.cluster import cosine_distance
@@ -101,13 +102,27 @@ for tweet in range(0, len(tweets)):
 				tweetsBoW[tweet][i] += 1                            
 
 #clustering
-nClusters = 10
+
+nClustersStr = input("---> How many clusters do you want to use? ")
+nClusters = int(nClustersStr)
 kmeans = cluster.KMeansClusterer(nClusters,  cosine_distance, avoid_empty_clusters=True,conv_test=1e-4)  
 clusters = kmeans.cluster(tweetsBoW, True, trace=True) 
 
+#printing tweets of biggest cluster
+biggestCluster = max(Counter(clusters).items(), key=operator.itemgetter(1))[0]
 #printing each tweet as well as the cluster they were assigned to
+print("------------------> Those are the tweets of the biggest cluster: \n\n\n")
 for doc, cls in zip(unchangedTweets, clusters):
-    print(cls,doc)
+    if(cls == biggestCluster):
+   		print(cls,doc)
+
+#printing tweets of smallest cluster
+biggestCluster = min(Counter(clusters).items(), key=operator.itemgetter(1))[0]
+#printing each tweet as well as the cluster they were assigned to
+print("------------------> Those are the tweets of the smallest cluster: \n\n\n")
+for doc, cls in zip(unchangedTweets, clusters):
+    if(cls == biggestCluster):
+   		print(cls,doc)
 
 #plotting clusters number of elements for analysis
 labels = list(range(0,nClusters))
@@ -120,4 +135,5 @@ plt.ylabel('Number of tweets')
 plt.ylim(0,400)
 plt.xticks(y_pos, labels)
 plt.show()
+
 
