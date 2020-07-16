@@ -38,17 +38,26 @@ Content
   
   4. Describe the contents of clusters.
   
-  K = 5
-    ![GitHub Logo](/K5.png)
-    Format: ![Alt Text](url)
-
-  K = 10
-    ![GitHub Logo](/K10.png)
-    Format: ![Alt Text](url)
+  ### For K = 5
     
-  K = 15
-    ![GitHub Logo](/K15.png)
-    Format: ![Alt Text](url)
+The distribution of the tweets over the clusters can be seen below:
+    
+  ![GitHub Logo](/K5.png)
+  Format: ![Alt Text](url)
+
+  ### For K = 10
+  
+The distribution of the tweets over the clusters can be seen below:
+
+  ![GitHub Logo](/K10.png)
+  Format: ![Alt Text](url)
+    
+  ### For K = 15
+ 
+The distribution of the tweets over the clusters can be seen below:
+
+  ![GitHub Logo](/K15.png)
+  Format: ![Alt Text](url)
   
   5. Evaluate the clustering results.
   6. Consideration 
