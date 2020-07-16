@@ -17,14 +17,14 @@ Content
   
   1.1 Preprocessing 
     
-    The original "tweets.20150430-223406.json" file comes with 20,000 tweets. However, many of them are very short which would make them hard to cluster. 
-    Therefore I decided to exclude the tweets smaller than 140 characthers, which left me with 857 tweets. 
+   The original "tweets.20150430-223406.json" file comes with 20,000 tweets. However, many of them are very short which would make them hard to cluster. 
+   Therefore I decided to exclude the tweets smaller than 140 characthers, which left me with 857 tweets. 
     
-    Next I removed newlines (in exchange for spaces), numbers, punctuations and some emojis from the texts.  
+   Next I removed newlines (in exchange for spaces), numbers, punctuations and some emojis from the texts.  
     
-    I created a list of "stopWords" using NLTK stopwords for english as well as common internet jargons that you can find in the file "interSlangs.json", which were scraped from https://www.netlingo.com/acronyms.php  
+   I created a list of "stopWords" using NLTK stopwords for english as well as common internet jargons that you can find in the file "interSlangs.json", which were scraped from https://www.netlingo.com/acronyms.php  
     
-    Next I split the tweets in words, and moved all the words that match one of the words in the "stopWords" list. Everything left was transformed to lowercase. 
+   Next I split the tweets in words, and moved all the words that match one of the words in the "stopWords" list. Everything left was transformed to lowercase. 
   
   2. The measure used to estimate document similarity
      
@@ -33,10 +33,23 @@ Content
     
   3. Comparing the clustering results with different parameter k
   
-  I ran the code with 3 different values for k: 5, 10, 50
+  I ran the code with 3 different values for k: 5, 10, 15
   And my results of the clustering as well as their evaluation for each k are discussed on the topics below. 
   
   4. Describe the contents of clusters.
+  
+  K = 5
+    ![GitHub Logo](/K5.png)
+    Format: ![Alt Text](url)
+
+  K = 10
+    ![GitHub Logo](/K10.png)
+    Format: ![Alt Text](url)
+    
+  K = 15
+    ![GitHub Logo](/K15.png)
+    Format: ![Alt Text](url)
+  
   5. Evaluate the clustering results.
   6. Consideration 
   7. Source Code  (on GitHub)
