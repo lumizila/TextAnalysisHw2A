@@ -99,9 +99,10 @@ For K = 15 it is possible to see that cluster 5 had extremely low number of elem
 
 Some tweets from cluster 5:
 
-5 RT @mondoreally: Voting Tory/UKIP ? Please unfollow &amp; let me know why so I can unfollow you.You're not my type.It's not me it's you &amp; your …
-5 RT @mondoreally: Voting Tory/UKIP ? Please unfollow &amp; let me know why so I can unfollow you.You're not my type.It's not me it's you &amp; your …
-5 #AnimalWelfare Hustings tonight in Bristol via @lushcampaigns @LeagueACS @AnimalAid Tory,UKIP &amp; Libdems didnt attend! http://t.co/X54eEjNPHT
+    5 RT @mondoreally: Voting Tory/UKIP ? Please unfollow &amp; let me know why so I can unfollow you.You're not my type.It's not me it's you &amp; your …
+    5 RT @mondoreally: Voting Tory/UKIP ? Please unfollow &amp; let me know why so I can unfollow you.You're not my type.It's not me it's you &amp; your …
+    5 #AnimalWelfare Hustings tonight in Bristol via @lushcampaigns @LeagueACS @AnimalAid Tory,UKIP &amp; Libdems didnt attend! http://t.co/X54eEjNPHT
+    5 @mondoreally: Voting Tory/UKIP ? Please unfollow &amp; let me know why so I can unfollow you.You're not my type.It's not me it's you &amp; your …
 
 Some tweets from cluster 9:
   
@@ -122,9 +123,11 @@ Some tweets from cluster 3:
 
   ### 3.2 Evaluating the clustering results.
   
+  It is evident that with more clusters it is possible to group tweets that are more and more similar. However, this might create an effect in which small clusters are comprised mostly of retweets, such as seen in cluster 5 from K = 15. There must be a balance between the original number of tweets and the number of clusters. In any way I believe that when K = 15 the groupings were better, from analysing the bar graph. That is because many clusters in K = 15 had a similar number of tweets in them (clusters 1, 13, 4, 14, 0, 10, 6, 2, 7). Two clusters (9 and 3) in K = 15 still had a large number of tweets in them suggesting that maybe it would be better to increase K. When K = 5 there was no cluster with a very low number of elements, however it seems like bigger cluster have elements that are too different from each other (besides the retweets) such is the case with cluster 0. On the other hand cluster 2 from K = 5 had a very nice collection of tweets in it, as you can see from the examples, many different tweets contained the word "Tory" and many were talking about the economy. 
+  
   ### 4. Consideration 
   
-  Many of the big tweets found are retweets, which I believe can make the clustering of tweets easier since in retweets the text content in the same as the original tweet. 
+  Many of the big tweets found are retweets (They are indicated by RT in the beggining of the tweet), which I believe can make the clustering of tweets easier since in retweets the text content in the same as the original tweet. For a future work I would like to remove all the retweets and work only with original tweets. 
   
   ### 5. Source Code  (on GitHub)
   See source code at https://github.com/lumizila/TextAnalysisHw2A
