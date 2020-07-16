@@ -108,25 +108,15 @@ nClusters = int(nClustersStr)
 kmeans = cluster.KMeansClusterer(nClusters,  cosine_distance, avoid_empty_clusters=True,conv_test=1e-4)  
 clusters = kmeans.cluster(tweetsBoW, True, trace=True) 
 
-#printing tweets of biggest cluster
-biggestCluster = max(Counter(clusters).items(), key=operator.itemgetter(1))[0]
-#printing each tweet as well as the cluster they were assigned to
-print("------------------> Those are the tweets of the biggest cluster: \n\n\n")
 for doc, cls in zip(unchangedTweets, clusters):
-    if(cls == biggestCluster):
-   		print(cls,doc)
+   	print(cls,doc)
 
-#printing tweets of smallest cluster
-biggestCluster = min(Counter(clusters).items(), key=operator.itemgetter(1))[0]
-#printing each tweet as well as the cluster they were assigned to
-print("------------------> Those are the tweets of the smallest cluster: \n\n\n")
-for doc, cls in zip(unchangedTweets, clusters):
-    if(cls == biggestCluster):
-   		print(cls,doc)
 
 #plotting clusters number of elements for analysis
-labels = list(range(0,nClusters))
+labels = list(Counter(clusters))
+print(labels)
 values = list(Counter(clusters).values())
+print(values)
 y_pos = numpy.arange(len(labels))
 plt.bar(y_pos,values, color = (0.5,0.1,0.5,0.6))
 plt.title('Number of clusters in total = '+str(nClusters))
