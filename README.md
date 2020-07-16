@@ -28,15 +28,15 @@ Content
   
   ### 2. The measure used to estimate document similarity
      
-     For measuring document similarity was Cosine Similarity since this was the method that gave the best results on Homework 1.
-     (for reference: https://github.com/lumizila/TextAnalysisHomework ) 
+   For measuring document similarity was Cosine Similarity since this was the method that gave the best results on Homework 1.
+   (for reference: https://github.com/lumizila/TextAnalysisHomework ) 
     
   ### 3. Comparing the clustering results with different parameter k
   
   I ran the code with 3 different values for k: 5, 10, 15
   And my results of the clustering as well as their evaluation for each k are discussed on the topics below. 
   
-  ### 4. Describing the contents of clusters.
+  ### 3.1 Describing the contents of clusters.
   
   ### For K = 5
     
@@ -55,8 +55,10 @@ The distribution of the tweets over the clusters can be seen below:
 The distribution of the tweets over the clusters can be seen below:
 
   ![GitHub Logo](/K15.png)
-  Format: ![Alt Text](url)
   
-  5. Evaluate the clustering results.
-  6. Consideration 
-  7. Source Code  (on GitHub)
+  ### 3.2 Evaluating the clustering results.
+  ### 4. Consideration 
+  
+  Many of the big tweets found are retweets, which I believe can make the clustering of tweets easier since in retweets the text content in the same as the original tweet. 
+  
+  ### 5. Source Code  (on GitHub)
