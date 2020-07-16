@@ -95,6 +95,31 @@ The distribution of the tweets over the clusters can be seen below:
 
   ![GitHub Logo](/K15.png)
   
+For K = 15 it is possible to see that cluster 5 had extremely low number of elements (4), while cluster 9 and cluster 3 had a very big number of tweets(230, 158 respectively). 
+
+Some tweets from cluster 5:
+
+5 RT @mondoreally: Voting Tory/UKIP ? Please unfollow &amp; let me know why so I can unfollow you.You're not my type.It's not me it's you &amp; your …
+5 RT @mondoreally: Voting Tory/UKIP ? Please unfollow &amp; let me know why so I can unfollow you.You're not my type.It's not me it's you &amp; your …
+5 #AnimalWelfare Hustings tonight in Bristol via @lushcampaigns @LeagueACS @AnimalAid Tory,UKIP &amp; Libdems didnt attend! http://t.co/X54eEjNPHT
+
+Some tweets from cluster 9:
+  
+    9 RT @KevinJPringle: .@Ed_Miliband's distancing from @theSNP wholly under pressure from Tories - he went way too far &amp; has given Labour in Sc…
+    9 RT @AngusMacNeilSNP: Again Nicola Sturgeon a truly amazing political &amp; honest personal connection with audience ..#Impressed  Join SNP at h…
+    9 @Craig4CardiffN Tories not done enough to stop dodging 3200+ on benefit fraud &amp; just 300 on tax avoidance loses more https://t.co/GFdAJcLKul
+    9 RT @macplus4: And. Miliband stumbled. Much bigger issues to discuss - NHS, mental health, foodbanks, homelessness, usual cuts to women &amp; ch…
+    9 RT @lucymanning: Ed Miliband stumbles off the stage. A punning gift for his political opponents &amp; headline writers  https://t.co/8PAm2E6okN
+
+Some tweets from cluster 3:
+    
+    3 Couldn't watch the leaders Q&amp;As tonight as I was at a scholarship dinner, but at said dinner I argued Labour doesn't need nor want the SNP
+    3 RT @JimForScotland: Labour has called SNP bluff. The SNP must now be clear: are they willing to prevent or bring down a Labour government &amp;…
+    3 RT @WelshConserv: We've come a long way in 5yrs. Don't let EdM &amp; SNP drag us back to square one. Let's keep going #SecureTheRecovery https:…
+    3 Sky News have been pushing the "Labour deal with SNP" line for weeks &amp; now admit Lab can go it alone &amp; dare SNP to vote them out #zing
+    3 RT @west_views: The BBC's Glen Campbell just can't disguise his dislike of Nicola &amp; the #SNP.
+    We need a national broadcaster instead of a W…
+
   ### 3.2 Evaluating the clustering results.
   
   ### 4. Consideration 
